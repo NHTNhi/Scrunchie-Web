@@ -1,0 +1,125 @@
+@import './Template.less';
+@import './MainLayout.less';
+
+.scrunchieHeader {
+    width: 100%;
+    .scrunchieHeaderMargin {
+        width: 100%;
+        height: @IO-HEADER-HEIGHT;
+
+    }
+
+    > .scrunchieHeaderFloat {
+        .SECTION();
+
+        height: @IO-HEADER-HEIGHT;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+
+        padding: 0;
+
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px,
+                    rgba(0, 0, 0, 0.05) 0px 1px 4px 0px,
+                    rgba(0, 0, 0, 0.05) 0px 2px 8px 0px;
+
+        > .scrunchieHeaderFloatBox {
+            .SECTION_BOX();
+
+            height: @IO-HEADER-HEIGHT;
+
+            > .menuButton{
+                width: @IO-HEADER-HEIGHT;
+                height: @IO-HEADER-HEIGHT;
+                line-height: @IO-HEADER-HEIGHT;
+                margin: 5px;
+                border-radius: 999px;
+                text-align: center;
+                cursor: pointer;
+                font-size: 1.1rem;
+                float: left;
+
+                &.active {
+                    background-color: rgba(0, 0, 0, 0.05);
+                }
+            }
+
+            > .searchButton{
+                width: @IO-HEADER-HEIGHT ;
+                height: @IO-HEADER-HEIGHT ;
+                line-height: @IO-HEADER-HEIGHT;
+                margin: 5px;
+                border-radius: 999px;
+                text-align: center;
+                cursor: pointer;
+                font-size: 1.1rem;
+                float: left;
+
+                &.active {
+                    background-color: rgba(0, 0, 0, 0.05);
+                }
+            }
+
+            > .logo {
+                width: 300px;
+                height: @IO-HEADER-HEIGHT;
+                float: left;
+
+                a {
+                    width: 300px;
+                    height: 100%;
+                    display: block;
+                    display: flex;
+                    align-items: center;
+                    transition: 0.4s;
+
+                    img {
+                        width: 250px;
+                        height: 50px;
+                    }
+
+                    &:hover {
+                        transform: rotate(-30deg);
+                    }
+                }
+            }
+
+
+            > .userButton{
+                width: @IO-HEADER-HEIGHT ;
+                height: @IO-HEADER-HEIGHT ;
+                line-height: @IO-HEADER-HEIGHT;
+                margin: 5px;
+                border-radius: 999px;
+                text-align: center;
+                cursor: pointer;
+                font-size: 1.1rem;
+                float: right;
+
+                &.active {
+                    background-color: rgba(0, 0, 0, 0.05);
+                }
+            }
+
+            > .cartButton{
+                width: @IO-HEADER-HEIGHT ;
+                height: @IO-HEADER-HEIGHT ;
+                line-height: @IO-HEADER-HEIGHT;
+                margin: 5px;
+                border-radius: 999px;
+                text-align: center;
+                cursor: pointer;
+                font-size: 1.1rem;
+                float: right;
+
+                &.active {
+                    background-color: rgba(0, 0, 0, 0.05);
+                }
+            }
+        }
+    }
+    
+
+}

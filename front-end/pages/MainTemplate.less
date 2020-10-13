@@ -1,0 +1,44 @@
+@import './Template.less';
+
+@IO-MAX-WIDTH-PC: 1580px;
+@IO-PADDING-PC: 30px;
+@IO-MARGIN-PC: 30px;
+
+@IO-MAX-WIDTH-PHONE: 320px;
+@IO-PADDING-PHONE: 10px;
+@IO-MARGIN-PHONE: 15px;
+
+@IO-HEADER-HEIGHT: 54px;
+@IO-BOARD-HEADER-HEIGHT: 48px;
+
+@IO-BUTTON-CIRCLE-BG-HOVER: rgba(0, 0, 0, 0.05);
+
+@IO-ARTICLES-MARGIN: 30px;
+
+.SECTION {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    > .SECTION_BOX {
+        width: 100%;
+        max-width: @IO-MAX-WIDTH-PC;
+        padding: 0 @IO-PADDING-PC;
+
+        @media (max-width: @IO-SM-MIN) {
+            padding: 0 @IO-PADDING-PHONE;
+        }
+    }
+}
+
+@media (max-width: @IO-XS-MAX) {
+    .ioHideOnPhone {
+        display: none !important;
+    }
+}
+
+@media (min-width: @IO-SM-MIN) {
+    .ioHideOnPC {
+        display: none !important;
+    }
+}

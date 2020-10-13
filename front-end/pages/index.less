@@ -1,0 +1,124 @@
+@import './MainTemplate.less';
+
+.index {
+    .SECTION();
+    padding: @IO-PADDING-PC 0;
+
+    .indexBox{
+        .SECTION_BOX();
+        width: 100%;
+
+        .menu {
+            width: 100%;
+            margin-bottom: 20px;
+
+            ul {
+                padding: auto;
+                margin: 0 auto;
+                list-style-type: none;
+                overflow: hidden;
+                display: table;
+
+    
+                li {
+                    list-style: none;
+                    min-height: 25px;
+                    display: inline;
+                    margin: 15px;
+    
+                    a {
+                        font-family: Verdana;
+                        color: #000000;
+                        font-size: 0.85rem;
+                        cursor: pointer;
+                        transition: 0.5s;
+
+
+                        &:hover {                        
+                            font-size: 1.35rem;
+                            color: pink;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+
+        .banner {
+            width: 100%;
+            height: 600px;
+            background-color: #FFF6F1;
+
+            > .products {
+                width: 50%;
+                height: 70%;
+                float: left;
+
+                a {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    display: flex;
+                    align-items: center;
+                    transition: 0.4s;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            .detail {
+                width:100%;
+                height: 100%;
+                background-color: blue;
+
+                h4 {
+                    margin-top: 20px;
+                    font-size: 1.3rem;
+                    font-weight: 100;
+                    font-family: Verdana;
+                    color: #000;
+                }
+
+                h2 {
+                        font-size: 3.3rem;
+                        font-weight: 500;
+                        color: #000;
+                        letter-spacing: 0.1rem;
+                        background: rgba(255, 255, 255, 0.05);
+                        border: 1px solid rgba(0, 0, 0, 0.05);
+                        padding: 4px 12px;
+                        border-radius: 999px;
+                        text-shadow: 1px 1px 3px #fff;
+                        display: block;
+                }
+
+                p {
+                    font-size: 3.3rem;
+                    font-weight: 500;
+                    color: #000;
+                    letter-spacing: 0.1rem;
+                    background: rgba(255, 255, 255, 0.05);
+                    border: 1px solid rgba(0, 0, 0, 0.05);
+                    padding: 4px 12px;
+                    border-radius: 999px;
+                    text-shadow: 1px 1px 3px #fff;
+                    display: block;
+                }
+
+                .shopButton {
+                    color:#fff;
+                    size: large;
+
+                }
+
+            }
+        }
+    }
+}
