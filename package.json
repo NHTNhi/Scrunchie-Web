@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@nestjs/swagger": "^4.6.1"
+  }
+}
